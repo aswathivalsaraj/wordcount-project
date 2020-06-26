@@ -1,0 +1,8 @@
+<h4>Word Count  Example</h4>
+<p>Your Text: {{ fullText }} </p>
+<p>Total Number of words in text: {{Count }}</p>
+<a href="{% url 'home' %}">Back</a>
+<h3>Word Dictionary</h3>
+{% for word, wordcount in worddictionary %}
+{{ word }} ---- {{ wordcount }}
+{% endfor %}
